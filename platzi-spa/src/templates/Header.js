@@ -2,15 +2,15 @@
 const Header = ()=>{
    const view = `
       <div class="Hearder-main">
-        <divclass="Header-logo">
+        <div class="Header-logo">
             <h1>
-                <ahref="/">
+                <a href="/">
                     100tifi.co
                 </a>
             </h1>
         </div>
         <div class="Header-nav">
-            <ahref="#/about/">
+            <a href="#/about/">
                 About
             </a>
         </div>

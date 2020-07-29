@@ -40,13 +40,13 @@ module.exports ={
    },
    // creamos la seccion de plugin para poder trabajr con archivos html
    plugins:[
-      new HtmlWebpackPlugin([
+      new HtmlWebpackPlugin(
          {
             // establecemos el valor en tru para poder injector codigo a un html
             inject:true,
             template:'./public/index.html',
             filename:'./index.html'
          }
-      ])
+      ),
    ]
 }
