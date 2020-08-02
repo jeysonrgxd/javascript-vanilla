@@ -19,6 +19,14 @@ const router = async ()=>{
    const content = null || document.getElementById("content")
 
    header.innerHTML = await Header();
+   let hash = getHash()
+   let route = await resolveRoutes(hash)
+
+   // recordar que esta varible render se le pasara una declaracion de funcion que tiene valor en los atributos de objeto routes
+   let render = await routes[route] ? routes[route] : Error404
+
+   // luego como render() es una funcion que retorna un valor (template lo metemos denteo de content)
+   content.innerHTML = render()
 
 }
 
