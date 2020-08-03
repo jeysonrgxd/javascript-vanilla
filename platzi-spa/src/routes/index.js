@@ -26,7 +26,7 @@ const router = async ()=>{
    let render = await routes[route] ? routes[route] : Error404
 
    // luego como render() es una funcion que retorna un valor (template lo metemos denteo de content)
-   content.innerHTML = render()
+   content.innerHTML = await render()
 
 }
 
